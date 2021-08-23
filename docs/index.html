@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/media.css">
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -20,24 +21,22 @@
       <div class="header__container container">
         <button id="open-menu" class="open-menu-btn header__btn btn-reset" aria-label="Открыть меню">
           <svg width="36" height="29" viewbox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white"/>
-            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
-            <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white"/>
-            </svg>            
+            <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+            <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+            <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
+          </svg>
         </button>
         <a href="#" class="header__logo logo link-reset">
           <img src="img/logo.svg" alt="Логотип галереи Blanchard">
         </a>
         <nav id="menu" class="nav header__nav">
+          <button id="close-menu" class="close-menu-btn btn-reset" aria-label="Закрыть меню">
+            <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white" />
+              <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white" />
+            </svg>
+          </button>
           <ul class="nav__list header__list list-reset">
-            <li class="nav__item">
-              <button id="close-menu" class="close-menu-btn btn-reset" aria-label="Закрыть меню">
-                <svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="white"/>
-                  <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
-                  </svg>                  
-              </button>
-            </li>
             <li class="nav__item">
               <a href="#about" class="nav__link link-reset">О нас</a>
             </li>
@@ -60,16 +59,14 @@
               <a href="#contacts" class="nav__link link-reset">Контакты</a>
             </li>
           </ul>
-          <div class="enter">
-            <button class="enter__btn header__btn btn-reset" aria-label="Вход в личный кабинет">
-              <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                  fill="white" />
-              </svg>
-              Войти
-            </button>
-          </div>
+          <button class="enter__btn header__btn btn-reset" aria-label="Вход в личный кабинет">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                fill="white" />
+            </svg>
+            Войти
+          </button>
         </nav>
       </div>
     </div>
@@ -99,7 +96,7 @@
                   <a href="" class="dropdown-content__link link-reset">Верроккьо</a>
                 </li>
               </ul>
-            </div> 
+            </div>
           </li>
           <li class="dropdown__item">
             <button class="dropdown__btn btn-reset">
@@ -158,7 +155,7 @@
             </button>
             <div class="dropdown__content dropdown-content">
               <ul class="dropdown-content__list list-reset">
-                <li class="dropdown-content__item-4-1 dropdown-content__item" > 
+                <li class="dropdown-content__item-4-1 dropdown-content__item">
                   <a href="" class="dropdown-content__link link-reset">Кандинский</a>
                 </li>
                 <li class="dropdown-content__item-4-2 dropdown-content__item" tabindex="0">
@@ -198,33 +195,40 @@
             </div>
           </li>
         </ul>
-        <form class="header__search search" action="https://jsonplaceholder.typicode.com/posts" method="GET">
-          <button class="search__btn header__btn btn-reset">
+        <form class="header__search search">
+          <button id="header__search-btn" class="search__btn header__btn btn-reset">
             <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
-              </svg>              
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                fill="white" />
+            </svg>
           </button>
-          <input type="text" class="search__field" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <input id="header__search-field" type="text" class="search__field" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
         </form>
       </div>
     </div>
   </header>
 
- <main class="main">
+  <main class="main">
     <section class="hero">
-      <div class="hero__gallery">
-      </div>
       <div class="container hero__container">
-        <h1 class="hero__heading">Прикоснитесь к&nbsp;прекрасному</h1>
-        <p class="hero__text">
-            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-        </p>
-        <button class="hero__btn btn-fill btn-reset">Подписаться на рассылку</button>
+        <div class="hero__content">
+          <h2 class="hero__heading">Прикоснитесь к прекрасному</h2>
+          <p class="hero__text">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых предложений.
+          </p>
+          <button class="hero__btn btn-reset">Подписаться на рассылку</button>
+        </div>
       </div>
-    </section>
+      <div class="hero__gallery">
+        <div class="hero__img"></div>
+      </div>
 
-<!--<section id="about" class="about"></section>
+    </section>
+    <!--<section id="about" class="about"></section>
     <section id="gallery" class="gallery"></section>
     <section id="catalogue" class="catalogue"></section>
     <section id="events" class="events"></section>
