@@ -186,6 +186,9 @@
   }
 
   /* Hero */
+  .hero--gallery {
+    bottom: 150px
+  }
 }
 
 @media (max-width: 1030px) {

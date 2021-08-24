@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const dropdownBtns = document.querySelectorAll('.dropdown__btn');
-  const dropdowns = document.querySelectorAll('.dropdown__content');
   const buttons = document.querySelectorAll('button');
   const menu = document.querySelector('#menu');
   const searchField = document.querySelector('#header__search-field');
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new SimpleBar(ev.target.nextElementSibling), {
       autoHide: false,
-      scrollbarMaxSize: 28,
       forceVisible: true,
     }
 

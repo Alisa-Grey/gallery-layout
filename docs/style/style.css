@@ -60,7 +60,6 @@ html {
 }
 
 body {
-  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   background-color: var(--color-body);
@@ -105,7 +104,7 @@ img {
   width: 100%;
   max-width: 1700px;
   margin: 0 auto;
-  padding: 0 42px;
+  padding: 0 50px;
 }
 
 /* Header */
@@ -304,7 +303,7 @@ img {
 
 .dropdown-content__item {
   position: relative;
-  padding: 9px 14px 11px;
+  padding: 9px 14px 12px;
   background-color: #d88f99;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,7 +449,7 @@ img {
 
 .simplebar-scrollbar {
   width: 2px;
-  height: 28px;
+  height: 28px !important;
   background-color: var(--text-color-secondary);
 }
 
@@ -503,28 +502,20 @@ img {
 .hero {
   font-size: 18px;
   color: var(--text-color-secondary);
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero__gallery {
-  position: relative;
-  width: 100%;
-  height: 794px;
-  margin-top: -692px;
-  z-index: -5;
-  overflow: hidden;
-}
-
-.hero__img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
   right: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 297px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   background-image: url(../img/hero-desktop.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  overflow: hidden;
+  z-index: -5;
   animation: hero-pulse 15s linear infinite alternate;
 }
 
@@ -554,6 +545,12 @@ img {
 .hero__heading, .hero__text {
   max-width: 36%;
   font-weight: 700;
+}
+
+.hero__heading--hidden {
+  font-size: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero__heading {
