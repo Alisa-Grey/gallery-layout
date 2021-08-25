@@ -7,12 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.3/dist/simplebar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/media.css">
-  <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="https://unpkg.com/simplebar@5.3.3/dist/simplebar.min.js"></script>
   <script defer src="script/main.js"></script>
+  <noscript>
+    <style>
+      /**
+      * Reinstate scrolling for non-JS clients
+      */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
@@ -81,7 +91,7 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </button>
-            <div class="dropdown__content dropdown-content">
+            <div class="dropdown__content dropdown-content" data-simplebar>
               <ul class="dropdown-content__list list-reset">
                 <li class="dropdown-content__item-1-1 dropdown-content__item" tabindex="0">
                   <a href="" class="dropdown-content__link link-reset">Тинторетто</a>
@@ -111,7 +121,7 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </button>
-            <div class="dropdown__content dropdown-content">
+            <div class="dropdown__content dropdown-content" data-simplebar>
               <ul class="dropdown-content__list list-reset">
                 <li class="dropdown-content__item-2-1 dropdown-content__item" tabindex="0">
                   <a href="" class="dropdown-content__link link-reset">Моне</a>
@@ -141,7 +151,7 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </button>
-            <div class="dropdown__content dropdown-content">
+            <div class="dropdown__content dropdown-content" data-simplebar>
               <ul class="dropdown-content__list list-reset">
                 <li class="dropdown-content__item-3-1 dropdown-content__item" tabindex="0">
                   <a href="" class="dropdown-content__link link-reset">Ван Гог</a>
@@ -165,7 +175,7 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </button>
-            <div class="dropdown__content dropdown-content">
+            <div class="dropdown__content dropdown-content" data-simplebar>
               <ul class="dropdown-content__list list-reset">
                 <li class="dropdown-content__item-4-1 dropdown-content__item">
                   <a href="" class="dropdown-content__link link-reset">Кандинский</a>
@@ -189,7 +199,7 @@
                 <path d="M11 1L6 6L1 1" stroke="white" />
               </svg>
             </button>
-            <div class="dropdown__content dropdown-content">
+            <div class="dropdown__content dropdown-content" data-simplebar>
               <ul class="dropdown-content__list list-reset">
                 <li class="dropdown-content__item-5-1 dropdown-content__item">
                   <a href="" class="dropdown-content__link link-reset">Карра</a>

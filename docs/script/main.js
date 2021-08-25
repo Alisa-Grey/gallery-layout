@@ -3,19 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('button');
   const menu = document.querySelector('#menu');
   const searchField = document.querySelector('#header__search-field');
+  const dropdowns = document.querySelectorAll('.dropdown__content');
 
   buttons.forEach(button => button.addEventListener('mousedown', (e) => {
     e.preventDefault();
   }))
 
   dropdownBtns.forEach(btn => btn.addEventListener('click', (ev) => {
-    ev.target.classList.remove('is-active');
+    ev.target.classList.toggle('is-active');
     ev.target.nextElementSibling.classList.toggle('dropdown__content--active');
-
-    new SimpleBar(ev.target.nextElementSibling), {
-      autoHide: false,
-      forceVisible: true,
-    }
 
     document.addEventListener('click', (e) => {
       if (e.target !== btn) {
