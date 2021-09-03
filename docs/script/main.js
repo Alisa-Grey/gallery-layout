@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('button');
   const menu = document.querySelector('#menu');
   const searchField = document.querySelector('#header__search-field');
-  const dropdowns = document.querySelectorAll('.dropdown__content');
+  const select = document.querySelector('.select');
 
   buttons.forEach(button => button.addEventListener('mousedown', (e) => {
     e.preventDefault();
@@ -36,5 +36,32 @@ document.addEventListener('DOMContentLoaded', () => {
       searchField.parentElement.style.backgroundColor = '#18171b';
     }
   });
+
+  
+  const choices = new Choices(select, {
+    searchEnabled: false,
+    shouldSort: false,
+    itemSelectText: '',
+  });
+
+  const swiper = new Swiper('.gallery-slider', {
+    slidesPerView: 3,
+    grid: {
+      fill: 'row',
+      rows: 2,
+    },
+    slidesPerGroup: 3,
+    spaceBetween: 50,
+    pageUpDown: true,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
 
 });
